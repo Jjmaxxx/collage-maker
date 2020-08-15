@@ -1,0 +1,113 @@
+#outputButton{
+  font-size: 20pt;
+  width: 150px;
+  height: 75px;
+}
+label{
+  color:darkblue;
+  text-decoration: underline;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; 
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+/* Modal Content */
+.modalContent {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 3px solid #888;
+  width: 80%;
+  position: relative;
+  overflow: hidden;
+}
+
+#popup{
+  width:100%;
+  height:100%
+}
+
+#WidthHeightText{
+  width:100%;
+  font-size:20pt;
+  font-weight:bold;
+}
+#width1,#height1{
+  line-height:20px;
+  font-size:16pt;
+  font-weight:bold;
+}
+#click{
+  color:gray;
+  text-align:center;
+  z-index:5;
+}
+#border{
+  position:relative;
+}
+
+.resizer{
+  position: absolute;
+  width:10px;
+  height:10px;
+  border-radius:5px;
+  background-color:white;
+  border: black 2px solid;
+  z-index: 2;
+}
+
+.resizer.nw{
+  top: -1px;
+  left: -1px;
+  cursor:nw-resize;
+}
+.resizer.ne{
+  top:-1px;
+  right: -1px;
+  cursor:ne-resize;
+
+}
+.resizer.sw{
+  bottom:-1px;
+  left: -1px;
+  cursor:sw-resize;
+}
+.resizer.se{
+  bottom:-1px;
+  right: -1px;
+  cursor:se-resize;
+}
+.imageDiv{
+  position: absolute;
+  overflow:hidden;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  overflow: hidden;
+}
+#container{
+  height: 86%;
+  width: 90%;
+  margin:auto;
+  overflow: hidden;
+  border:2px solid black;
+}
+#download{
+  width: 40%;
+  margin-left: 30%;
+  margin-right: 30%;
+  position:relative;
+}
